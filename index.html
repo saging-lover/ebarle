@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Edmar C. Ebarle — Portfolio</title>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --black:#111111;
+      --accent:#000000;
+      --muted:#6f6a6a;
+      --max-width:1200px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:'Poppins',sans-serif;color:#111}
+
+
+    .nav-wrap{background:var(--black);position:fixed;left:0;right:0;top:0;z-index:60}
+    nav{max-width:var(--max-width);margin:0 auto;display:flex;justify-content:center;padding:22px 20px}
+    nav a{color:#fff;text-decoration:none;margin:0 28px;font-family:'Playfair Display',serif;font-size:34px;letter-spacing:2px}
+    nav a:hover{opacity:0.85}
+
+    main{padding-top:110px}
+
+
+    .hero{max-width:var(--max-width);margin:40px auto;display:flex;align-items:center;gap:40px;padding:30px}
+    .hero-left{flex:1;padding-left:40px}
+    .eyebrow{font-weight:700;letter-spacing:1px;color:var(--black);margin-bottom:10px}
+    .portfolio-title{font-size:120px;line-height:0.9;margin:0;font-weight:300}
+    .portfolio-sub{margin-top:24px;font-size:20px;color:var(--muted)}
+    .hero-right{width:420px;flex-shrink:0}
+    .profile{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:30px}
+
+
+    section{padding:40px 20px}
+    .section-title{font-family:'Playfair Display',serif;font-size:110px;margin:10px 0 20px}
+    .about-text{max-width:1000px;margin:10px auto;font-size:36px;line-height:1.15;color:#111}
+
+
+    .skills-intro{max-width:900px;margin:30px auto;font-size:22px;text-align:center}
+    .skills-grid{max-width:1100px;margin:30px auto;background:#8a8585;border-radius:60px;padding:40px 50px;display:flex;gap:30px;align-items:flex-end}
+    .skill{flex:1;text-align:center;padding-bottom:30px}
+    .skill h3{font-family:'Playfair Display',serif;color:#fff;font-size:44px;margin:8px 0}
+    .skill img{width:230px;max-width:70%;height:auto}
+
+
+    .projects-intro{max-width:900px;margin:30px auto;font-size:22px;text-align:center}
+    .projects-row{display:flex;gap:40px;justify-content:space-around;margin-top:40px}
+    .proj{width:300px;height:300px;border-radius:50%;overflow:hidden;display:block;border:8px solid transparent}
+    .proj img{width:100%;height:100%;object-fit:cover;display:block}
+
+
+    .education{max-width:1100px;margin:40px auto;display:flex;gap:30px;align-items:flex-start}
+    .edu-left{flex:0 0 260px;font-family:'Playfair Display',serif;font-size:72px;padding-left:20px}
+    .edu-list{flex:1}
+    .edu-row{display:flex;gap:18px;margin-bottom:28px}
+    .edu-icon{flex:0 0 80px;display:flex;align-items:flex-start}
+    .edu-content{flex:1}
+    .edu-content h4{margin:0;font-size:22px}
+    .edu-content em{display:block;margin-bottom:8px;color:var(--muted)}
+    .edu-content p{margin:6px 0 0;color:#111}
+
+
+    .contact{max-width:900px;margin:40px auto;text-align:center}
+    .contact-list{text-align:left;margin:30px 0;font-size:30px}
+    .send-btn{display:inline-block;margin-top:30px;background:#000;color:#fff;padding:28px 90px;border-radius:60px;font-weight:700;text-decoration:none}
+
+
+    @media (max-width:1100px){
+      .portfolio-title{font-size:80px}
+      .hero-right{width:340px}
+      .profile{border-radius:24px}
+    }
+    @media (max-width:900px){
+      nav a{font-size:26px;margin:0 12px}
+      .hero{flex-direction:column;gap:12px;text-align:center}
+      .hero-left{padding-left:0}
+      .hero-right{width:60%}
+      .portfolio-title{font-size:72px}
+      .section-title{font-size:80px}
+      .about-text{font-size:28px;padding:0 12px}
+      .skills-grid{flex-direction:column;padding:30px}
+      .skill img{width:160px}
+      .projects-row{flex-direction:row;gap:20px}
+      .proj{width:220px;height:220px}
+      .edu-left{display:none}
+    }
+    @media (max-width:480px){
+      .portfolio-title{font-size:54px}
+      .section-title{font-size:48px}
+      .nav-wrap{position:fixed}
+      nav{padding:14px}
+      nav a{font-size:18px}
+    }
+
+
+    .container{max-width:var(--max-width);margin:0 auto}
+  </style>
+</head>
+<body>
+  <div class="nav-wrap">
+    <nav>
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT ME</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#education">EDUCATION HISTORY</a>
+      <a href="#contact">CONTACT ME</a>
+    </nav>
+  </div>
+
+  <main>
+
+    <section id="home" class="hero">
+      <div class="hero-left">
+        <div class="eyebrow">MY</div>
+        <h1 class="portfolio-title">PORTFOLIO</h1>
+        <div class="portfolio-sub">Edmar C. Ebarle</div>
+      </div>
+      <div class="hero-right">
+
+        <img src="images/larpi.jpg" alt="profile" class="profile">
+      </div>
+    </section>
+
+
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">ABOUT ME</h2>
+        <p class="about-text">Hi!, my name is Edmar C. Ebarle, I am a 19 year-old secondyear college student, driven by passion and a relentless pursuit of excellence. With a natural flair for problem-solving and creativity, I’ve honed my skills in programming, web development, and design, always pushing myself to explore new technologies and tackle challenges head-on. While I’m still in the early stages of my journey, I’m already shaping my vision for the future. I envision myself working at a prestigious company, dressed in a branded suit, leading innovative projects, and enjoying the success of a life I’ve worked hard to build. My ambition is my fuel—whether it’s coding late into the night, collaborating with like-minded peers, or tackling complex problems, I am always ready to grow and evolve. Through my work and my determination, I aim to create a legacy that inspires others to dream big and aim high.</p>
+      </div>
+    </section>
+
+
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title" style="text-align:center">MY SKILLS</h2>
+        <p class="skills-intro">Over the course of my college journey, I have developed a strong foundation in programming, web development, and design, gaining hands-on experience with languages such as HTML, CSS, JavaScript, and Python, while also becoming familiar with tools and technologies like GitHub, Figma, and responsive web design.</p>
+
+        <div class="skills-grid">
+          <div class="skill">
+            <h3>HTML</h3>
+            <img src="images/html.webp" alt="HTML icon">
+          </div>
+          <div class="skill">
+            <h3>CSS</h3>
+            <img src="images/css.webp" alt="CSS icon">
+          </div>
+          <div class="skill">
+            <h3>Javascript</h3>
+            <img src="images/js.webp" alt="JS icon">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title" style="text-align:center">MY PROJECT</h2>
+        <p class="projects-intro">The following projects are conceptual and self-initiated, created as part of my learning journey to strengthen my skills, explore real-world scenarios, and demonstrate my ability to design and develop functional, user-centered solutions.</p>
+
+        <div class="projects-row">
+          <a class="proj" href="#"><img src="images/dreamfit.webp" alt="DreamFit"></a>
+          <a class="proj" href="#"><img src="images/launch.webp" alt="CareerLaunch"></a>
+          <a class="proj" href="#"><img src="images/room.webp" alt="StudySpace"></a>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="education">
+      <div class="container education">
+        <div class="edu-left">EDUCATION<br>HISTORY</div>
+        <div class="edu-list">
+          <div class="edu-row">
+            <div class="edu-icon">
+
+              <svg width="56" height="56" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7l10 5 10-5-10-5z" fill="#000"/><path d="M2 17l10 5 10-5" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="edu-content">
+              <h4>Sibugay Technical Institute Incorporated</h4>
+              <em>Bachelor of Science Information Technology</em>
+              <p>It’s a 4-year undergraduate degree focused on the study, design, development, implementation, support, and management of computer-based information systems, including both software applications and computer hardware.</p>
+            </div>
+          </div>
+
+          <div class="edu-row">
+            <div class="edu-icon">
+              <svg width="56" height="56" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="6" width="20" height="12" rx="2" stroke="#000" stroke-width="1.2" fill="none"/><path d="M6 6v-2h12v2" stroke="#000" stroke-width="1.2" stroke-linecap="round"/></svg>
+            </div>
+            <div class="edu-content">
+              <h4>Agro Industrial High School</h4>
+              <em>Agriculture Major</em>
+              <p>Agriculture is the practice of cultivating the soil, growing crops, and raising animals to produce food, fiber, medicinal plants, and other products used to sustain and improve human life.</p>
+            </div>
+          </div>
+
+          <div class="edu-row">
+            <div class="edu-icon">
+              <svg width="56" height="56" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 11c0-4.418 3.582-8 8-8s8 3.582 8 8" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 22v-6h12v6" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="edu-content">
+              <h4>Agro Industrial Junior High School</h4>
+              <em>Junior High</em>
+              <p>Agriculture is the practice of cultivating the soil, growing crops, and raising animals to produce food, fiber, medicinal plants, and other products used to sustain and improve human life.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact">
+      <div class="container contact">
+        <h2 class="section-title" style="text-align:center">CONTACT ME</h2>
+
+        <div class="contact-list">
+          <p><strong>Name :</strong> Edmar C. Ebarle</p>
+          <p><strong>Email :</strong> EdmayTzy@gmail.com</p>
+          <p><strong>Contact Number :</strong> 09532376414</p>
+        </div>
+
+        <a href="#" class="send-btn">SEND</a>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+
+    document.querySelectorAll('nav a').forEach(a => {
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if(!el) return;
+        window.scrollTo({top: el.offsetTop - 90, behavior:'smooth'});
+      })
+    })
+
+
+    const sections = Array.from(document.querySelectorAll('main section'));
+    const navLinks = Array.from(document.querySelectorAll('nav a'));
+
+    function onScroll(){
+      const top = window.scrollY + 120;
+      for(let i=sections.length-1;i>=0;i--){
+        const s = sections[i];
+        if(top >= s.offsetTop){
+          navLinks.forEach(n => n.style.opacity = 1);
+          const id = s.getAttribute('id');
+          navLinks.forEach(n => n.style.opacity = n.getAttribute('href').slice(1) === id ? 1 : 0.6);
+          break;
+        }
+      }
+    }
+    window.addEventListener('scroll', onScroll);
+    onScroll();
+  </script>
+</body>
+</html>
